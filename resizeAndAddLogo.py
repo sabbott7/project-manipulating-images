@@ -20,20 +20,20 @@ for filename in os.listdir('.'):
 
 #TODO: Check if file image needs to be resized
 
-        if width > SQUARE_FIT_SIZE and height > SQUARE_FIT_SIZE:
+    if width > SQUARE_FIT_SIZE and height > SQUARE_FIT_SIZE:
    
-#TODO: Calculate the new width and height to resize to.
+        #TODO: Calculate the new width and height to resize to.
 
-            if width > height:
-                height = int((SQUARE_FIT_SIZE / width) * height)
-                width = SQUARE_FIT_SIZE
-            else:
-                width = int((SQUARE_FIT_SIZE / height) * width)
-                height = SQUARE_FIT_SIZE
+        if width > height:
+            height = int((SQUARE_FIT_SIZE / width) * height)
+            width = SQUARE_FIT_SIZE
+        else:
+            width = int((SQUARE_FIT_SIZE / height) * width)
+            height = SQUARE_FIT_SIZE
 
-# Resize the image.
+        # Resize the image.
         print('Resizing %s...' % (filename))
-        im=im.resize((width,height))
+           im = im.resize((width, height))
     
 #TODO: Add the logo.
        
