@@ -31,9 +31,9 @@ for filename in os.listdir('.'):
             width = int((SQUARE_FIT_SIZE / height) * width)
             height = SQUARE_FIT_SIZE
 
-    # Resize the image.
-    print('Resizing %s...' % (filename))
-    im = im.resize((width, height))
+            # Resize the image.
+            print('Resizing %s...' % (filename))
+            im = im.resize((width, height))
     
 #TODO: Add the logo.
        
