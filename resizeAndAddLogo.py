@@ -42,4 +42,4 @@ for filename in os.listdir('.'):
        
 #TODO: Save changes.
 
-            im.save(os.path.join('withLogo', filename))
+im.save(os.path.join('withLogo', filename))
