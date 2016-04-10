@@ -33,7 +33,7 @@ if width > SQUARE_FIT_SIZE and height > SQUARE_FIT_SIZE:
 
     # Resize the image.
     print('Resizing %s...' % (filename))
-       im=im.resize((width,height))
+    im=im.resize((width,height))
     
 #TODO: Add the logo.
        
