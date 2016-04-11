@@ -2,7 +2,7 @@ import os
 from PIL import Image
 
 SQUARE_FIT_SIZE = 300
-LOGO_FILENAME = 'catlogo.png'
+LOGO_FILENAME = 'logo.png'
 
 logoIm = Image.open( LOGO_FILENAME )
 logoWidth, logoHeight = logoIm.size
@@ -32,8 +32,8 @@ for filename in os.listdir('.'):
             height = SQUARE_FIT_SIZE
 
         # Resize the image.
-        print('Resizing %s...' % (filename))
-        im = im.resize((width, height))
+            print('Resizing %s...' % (filename))
+            im = im.resize((width, height))
     
 #TODO: Add the logo.
        
