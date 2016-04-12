@@ -36,11 +36,11 @@ for filename in os.listdir('.'):
     
 #TODO: Add the logo.
        
-print('Adding logo to %s...' % (filename))
-im.paste(logoIm, (width - logoWidth, height - logoHeight), logoIm)
+            print('Adding logo to %s...' % (filename))
+            im.paste(logoIm, (width - logoWidth, height - logoHeight), logoIm)
        
 #TODO: Save changes.
 
-im.save(os.path.join('originals', filename))
+            im.save(os.path.join('originals', filename))
 
 
